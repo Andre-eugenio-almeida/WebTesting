@@ -8,7 +8,7 @@ Library    XML
 ${BROWSER}                chrome
 ${URL}                    http://www.amazon.com.br
 ${MENU_ELETRONICOS}       //a[@href='/Eletronicos-e-Tecnologia/b/?ie=UTF8&node=16209062011&ref_=nav_cs_electronics'][contains(.,'Eletrônicos')]
-${HEADER_ELETRONICOS}    //h1[contains(.,'Eletronicos e Tecnoligia')]
+${HEADER_ELETRONICOS}    //h1[contains(.,'Eletrônicos e Tecnoligia')]
 
 
 *** Keywords ***
