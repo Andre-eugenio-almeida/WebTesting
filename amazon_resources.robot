@@ -40,5 +40,3 @@ verificar se o titulo da pagina fica "${TITULO}"
     Title Should Be    title=${TITULO}
 
 
-verificar se aparece a categoria "${NOME_CATEGORIA}"
-    Element Should Be Visible    locator
