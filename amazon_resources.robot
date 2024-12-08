@@ -41,4 +41,4 @@ verificar se o titulo da pagina fica "${TITULO}"
 
 
 verificar se aparece a categoria "${NOME_CATEGORIA}"
-    Element Should Be Visible    locator
+    Element Should Be Visible    locator=//a[@area-label='${NOME_CATEGORIA}']
