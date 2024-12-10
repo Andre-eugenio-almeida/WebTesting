@@ -1,168 +1,168 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1.1 (Python 3.13.0 on win32)" generated="2024-12-08T20:00:32.326221" rpa="false" schemaversion="5">
+<robot generator="Robot 7.1.1 (Python 3.13.0 on win32)" generated="2024-12-10T14:21:00.180425" rpa="false" schemaversion="5">
 <suite id="s1" name="Amazon Testes" source="C:\testeUdemy\robotFramework\WebTesting\amazon_testes.robot">
 <test id="s1-t1" name="caso de teste 01 - Acesso ao menu &quot;Eletrônicos&quot;" line="12">
 <kw name="Abrir o navegador" owner="amazon_resources" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-12-08T20:00:32.828969" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg time="2024-12-10T14:21:00.592463" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
 <arg>browser=${BROWSER}</arg>
 <arg>options=add_experimental_option("detach", True)</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-12-08T20:00:32.828611" elapsed="2.577519"/>
+<status status="PASS" start="2024-12-10T14:21:00.592019" elapsed="1.890521"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-12-08T20:00:35.406429" elapsed="0.026663"/>
+<status status="PASS" start="2024-12-10T14:21:02.482954" elapsed="0.046929"/>
 </kw>
-<status status="PASS" start="2024-12-08T20:00:32.827310" elapsed="2.606126"/>
+<status status="PASS" start="2024-12-10T14:21:00.589985" elapsed="1.940330"/>
 </kw>
 <kw name="Acessar a home page do site Amazon.com.br" owner="amazon_resources">
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2024-12-08T20:00:35.435826" level="INFO">Opening url '{$URL}'</msg>
-<msg time="2024-12-08T20:00:35.558830" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2024-12-08T20:00:35.559137" level="FAIL">InvalidArgumentException: Message: invalid argument
-  (Session info: chrome=131.0.6778.87)
+<msg time="2024-12-10T14:21:02.533401" level="INFO">Opening url '{$URL}'</msg>
+<msg time="2024-12-10T14:21:02.676155" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-12-10T14:21:02.676541" level="FAIL">InvalidArgumentException: Message: invalid argument
+  (Session info: chrome=131.0.6778.109)
 Stacktrace:
-	GetHandleVerifier [0x00AF33E3+25059]
-	(No symbol) [0x00A7CDE4]
-	(No symbol) [0x0095BD39]
-	(No symbol) [0x0094CF61]
-	(No symbol) [0x0094B88B]
-	(No symbol) [0x0094BE6B]
-	(No symbol) [0x0095E8BE]
-	(No symbol) [0x009DBF47]
-	(No symbol) [0x009C1EFC]
-	(No symbol) [0x009DB51E]
-	(No symbol) [0x009C1C96]
-	(No symbol) [0x00993FAC]
-	(No symbol) [0x00994F3D]
-	GetHandleVerifier [0x00DE5543+3113795]
-	GetHandleVerifier [0x00DFA20A+3198986]
-	GetHandleVerifier [0x00DF29E2+3168226]
-	GetHandleVerifier [0x00B93250+680016]
-	(No symbol) [0x00A8572D]
-	(No symbol) [0x00A829D8]
-	(No symbol) [0x00A82B75]
-	(No symbol) [0x00A757D0]
-	BaseThreadInitThunk [0x7612FCC9+25]
-	RtlGetAppContainerNamedObjectPath [0x77127CBE+286]
-	RtlGetAppContainerNamedObjectPath [0x77127C8E+238]
+	GetHandleVerifier [0x00AD33E3+25059]
+	(No symbol) [0x00A5CDE4]
+	(No symbol) [0x0093BD39]
+	(No symbol) [0x0092CF61]
+	(No symbol) [0x0092B88B]
+	(No symbol) [0x0092BE6B]
+	(No symbol) [0x0093E8BE]
+	(No symbol) [0x009BBF47]
+	(No symbol) [0x009A1EFC]
+	(No symbol) [0x009BB51E]
+	(No symbol) [0x009A1C96]
+	(No symbol) [0x00973FAC]
+	(No symbol) [0x00974F3D]
+	GetHandleVerifier [0x00DC5543+3113795]
+	GetHandleVerifier [0x00DDA20A+3198986]
+	GetHandleVerifier [0x00DD29E2+3168226]
+	GetHandleVerifier [0x00B73250+680016]
+	(No symbol) [0x00A6572D]
+	(No symbol) [0x00A629D8]
+	(No symbol) [0x00A62B75]
+	(No symbol) [0x00A557D0]
+	BaseThreadInitThunk [0x77ADFCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x77D87CBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77D87C8E+238]
 </msg>
 <arg>url={$URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="FAIL" start="2024-12-08T20:00:35.435396" elapsed="0.132017">InvalidArgumentException: Message: invalid argument
-  (Session info: chrome=131.0.6778.87)
+<status status="FAIL" start="2024-12-10T14:21:02.532770" elapsed="0.147773">InvalidArgumentException: Message: invalid argument
+  (Session info: chrome=131.0.6778.109)
 Stacktrace:
-	GetHandleVerifier [0x00AF33E3+25059]
-	(No symbol) [0x00A7CDE4]
-	(No symbol) [0x0095BD39]
-	(No symbol) [0x0094CF61]
-	(No symbol) [0x0094B88B]
-	(No symbol) [0x0094BE6B]
-	(No symbol) [0x0095E8BE]
-	(No symbol) [0x009DBF47]
-	(No symbol) [0x009C1EFC]
-	(No symbol) [0x009DB51E]
-	(No symbol) [0x009C1C96]
-	(No symbol) [0x00993FAC]
-	(No symbol) [0x00994F3D]
-	GetHandleVerifier [0x00DE5543+3113795]
-	GetHandleVerifier [0x00DFA20A+3198986]
-	GetHandleVerifier [0x00DF29E2+3168226]
-	GetHandleVerifier [0x00B93250+680016]
-	(No symbol) [0x00A8572D]
-	(No symbol) [0x00A829D8]
-	(No symbol) [0x00A82B75]
-	(No symbol) [0x00A757D0]
-	BaseThreadInitThunk [0x7612FCC9+25]
-	RtlGetAppContainerNamedObjectPath [0x77127CBE+286]
-	RtlGetAppContainerNamedObjectPath [0x77127C8E+238]
+	GetHandleVerifier [0x00AD33E3+25059]
+	(No symbol) [0x00A5CDE4]
+	(No symbol) [0x0093BD39]
+	(No symbol) [0x0092CF61]
+	(No symbol) [0x0092B88B]
+	(No symbol) [0x0092BE6B]
+	(No symbol) [0x0093E8BE]
+	(No symbol) [0x009BBF47]
+	(No symbol) [0x009A1EFC]
+	(No symbol) [0x009BB51E]
+	(No symbol) [0x009A1C96]
+	(No symbol) [0x00973FAC]
+	(No symbol) [0x00974F3D]
+	GetHandleVerifier [0x00DC5543+3113795]
+	GetHandleVerifier [0x00DDA20A+3198986]
+	GetHandleVerifier [0x00DD29E2+3168226]
+	GetHandleVerifier [0x00B73250+680016]
+	(No symbol) [0x00A6572D]
+	(No symbol) [0x00A629D8]
+	(No symbol) [0x00A62B75]
+	(No symbol) [0x00A557D0]
+	BaseThreadInitThunk [0x77ADFCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x77D87CBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77D87C8E+238]
 </status>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>locator=${MENU_ELETRONICOS}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="NOT RUN" start="2024-12-08T20:00:35.567722" elapsed="0.000059"/>
+<status status="NOT RUN" start="2024-12-10T14:21:02.680816" elapsed="0.000051"/>
 </kw>
-<status status="FAIL" start="2024-12-08T20:00:35.434195" elapsed="0.133833">InvalidArgumentException: Message: invalid argument
-  (Session info: chrome=131.0.6778.87)
+<status status="FAIL" start="2024-12-10T14:21:02.531581" elapsed="0.149554">InvalidArgumentException: Message: invalid argument
+  (Session info: chrome=131.0.6778.109)
 Stacktrace:
-	GetHandleVerifier [0x00AF33E3+25059]
-	(No symbol) [0x00A7CDE4]
-	(No symbol) [0x0095BD39]
-	(No symbol) [0x0094CF61]
-	(No symbol) [0x0094B88B]
-	(No symbol) [0x0094BE6B]
-	(No symbol) [0x0095E8BE]
-	(No symbol) [0x009DBF47]
-	(No symbol) [0x009C1EFC]
-	(No symbol) [0x009DB51E]
-	(No symbol) [0x009C1C96]
-	(No symbol) [0x00993FAC]
-	(No symbol) [0x00994F3D]
-	GetHandleVerifier [0x00DE5543+3113795]
-	GetHandleVerifier [0x00DFA20A+3198986]
-	GetHandleVerifier [0x00DF29E2+3168226]
-	GetHandleVerifier [0x00B93250+680016]
-	(No symbol) [0x00A8572D]
-	(No symbol) [0x00A829D8]
-	(No symbol) [0x00A82B75]
-	(No symbol) [0x00A757D0]
-	BaseThreadInitThunk [0x7612FCC9+25]
-	RtlGetAppContainerNamedObjectPath [0x77127CBE+286]
-	RtlGetAppContainerNamedObjectPath [0x77127C8E+238]
+	GetHandleVerifier [0x00AD33E3+25059]
+	(No symbol) [0x00A5CDE4]
+	(No symbol) [0x0093BD39]
+	(No symbol) [0x0092CF61]
+	(No symbol) [0x0092B88B]
+	(No symbol) [0x0092BE6B]
+	(No symbol) [0x0093E8BE]
+	(No symbol) [0x009BBF47]
+	(No symbol) [0x009A1EFC]
+	(No symbol) [0x009BB51E]
+	(No symbol) [0x009A1C96]
+	(No symbol) [0x00973FAC]
+	(No symbol) [0x00974F3D]
+	GetHandleVerifier [0x00DC5543+3113795]
+	GetHandleVerifier [0x00DDA20A+3198986]
+	GetHandleVerifier [0x00DD29E2+3168226]
+	GetHandleVerifier [0x00B73250+680016]
+	(No symbol) [0x00A6572D]
+	(No symbol) [0x00A629D8]
+	(No symbol) [0x00A62B75]
+	(No symbol) [0x00A557D0]
+	BaseThreadInitThunk [0x77ADFCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x77D87CBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77D87C8E+238]
 </status>
 </kw>
 <kw name="Verificar se o titulo da pagina fica &quot; Amazon.com.br | Compre livros, Kindle, Echo, Fire Tv e mais.&quot;" owner="amazon_resources" source_name="verificar se o titulo da pagina fica &quot;${TITULO}&quot;">
-<status status="NOT RUN" start="2024-12-08T20:00:35.568613" elapsed="0.000073"/>
+<status status="NOT RUN" start="2024-12-10T14:21:02.681781" elapsed="0.000075"/>
 </kw>
 <kw name="Entrar no menu &quot;Eletrônicos&quot;" owner="amazon_resources">
-<status status="NOT RUN" start="2024-12-08T20:00:35.569010" elapsed="0.000060"/>
+<status status="NOT RUN" start="2024-12-10T14:21:02.682290" elapsed="0.000055"/>
 </kw>
 <kw name="Verificar se aparece a frase &quot;Eletrônicos e Tecnologia&quot;" owner="amazon_resources" source_name="Verificar se aparece a frase &quot;${FRASE}&quot;">
-<status status="NOT RUN" start="2024-12-08T20:00:35.569385" elapsed="0.000070"/>
+<status status="NOT RUN" start="2024-12-10T14:21:02.682770" elapsed="0.000071"/>
 </kw>
 <kw name="Verificar se o titulo da pagina fica &quot;Eletrônicos e Tecnologia | Amazon.com.br&quot;" owner="amazon_resources" source_name="verificar se o titulo da pagina fica &quot;${TITULO}&quot;">
-<status status="NOT RUN" start="2024-12-08T20:00:35.569836" elapsed="0.000058"/>
+<status status="NOT RUN" start="2024-12-10T14:21:02.683267" elapsed="0.000056"/>
 </kw>
 <kw name="Verificar se aparece a categoria &quot;tablets&quot;" owner="amazon_resources" source_name="verificar se aparece a categoria &quot;${NOME_CATEGORIA}&quot;">
-<status status="NOT RUN" start="2024-12-08T20:00:35.570166" elapsed="0.000052"/>
+<status status="NOT RUN" start="2024-12-10T14:21:02.683708" elapsed="0.000055"/>
 </kw>
 <doc>Este teste verifica o menu de eletronicos do site da Amazon.com.br
 e verificar a categoria Computadores e Informatica</doc>
 <tag>categorias</tag>
 <tag>menus</tag>
-<status status="FAIL" start="2024-12-08T20:00:32.826074" elapsed="2.744500">InvalidArgumentException: Message: invalid argument
-  (Session info: chrome=131.0.6778.87)
+<status status="FAIL" start="2024-12-10T14:21:00.588135" elapsed="2.096077">InvalidArgumentException: Message: invalid argument
+  (Session info: chrome=131.0.6778.109)
 Stacktrace:
-	GetHandleVerifier [0x00AF33E3+25059]
-	(No symbol) [0x00A7CDE4]
-	(No symbol) [0x0095BD39]
-	(No symbol) [0x0094CF61]
-	(No symbol) [0x0094B88B]
-	(No symbol) [0x0094BE6B]
-	(No symbol) [0x0095E8BE]
-	(No symbol) [0x009DBF47]
-	(No symbol) [0x009C1EFC]
-	(No symbol) [0x009DB51E]
-	(No symbol) [0x009C1C96]
-	(No symbol) [0x00993FAC]
-	(No symbol) [0x00994F3D]
-	GetHandleVerifier [0x00DE5543+3113795]
-	GetHandleVerifier [0x00DFA20A+3198986]
-	GetHandleVerifier [0x00DF29E2+3168226]
-	GetHandleVerifier [0x00B93250+680016]
-	(No symbol) [0x00A8572D]
-	(No symbol) [0x00A829D8]
-	(No symbol) [0x00A82B75]
-	(No symbol) [0x00A757D0]
-	BaseThreadInitThunk [0x7612FCC9+25]
-	RtlGetAppContainerNamedObjectPath [0x77127CBE+286]
-	RtlGetAppContainerNamedObjectPath [0x77127C8E+238]
+	GetHandleVerifier [0x00AD33E3+25059]
+	(No symbol) [0x00A5CDE4]
+	(No symbol) [0x0093BD39]
+	(No symbol) [0x0092CF61]
+	(No symbol) [0x0092B88B]
+	(No symbol) [0x0092BE6B]
+	(No symbol) [0x0093E8BE]
+	(No symbol) [0x009BBF47]
+	(No symbol) [0x009A1EFC]
+	(No symbol) [0x009BB51E]
+	(No symbol) [0x009A1C96]
+	(No symbol) [0x00973FAC]
+	(No symbol) [0x00974F3D]
+	GetHandleVerifier [0x00DC5543+3113795]
+	GetHandleVerifier [0x00DDA20A+3198986]
+	GetHandleVerifier [0x00DD29E2+3168226]
+	GetHandleVerifier [0x00B73250+680016]
+	(No symbol) [0x00A6572D]
+	(No symbol) [0x00A629D8]
+	(No symbol) [0x00A62B75]
+	(No symbol) [0x00A557D0]
+	BaseThreadInitThunk [0x77ADFCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x77D87CBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77D87C8E+238]
 </status>
 </test>
 <doc>Essa suite testa o site da amazon.com.br</doc>
-<status status="FAIL" start="2024-12-08T20:00:32.328028" elapsed="3.248123"/>
+<status status="FAIL" start="2024-12-10T14:21:00.182591" elapsed="2.508906"/>
 </suite>
 <statistics>
 <total>
