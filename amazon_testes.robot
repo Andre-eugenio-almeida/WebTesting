@@ -18,6 +18,7 @@ caso de teste 01 - Acesso ao menu "Eletrônicos"
     Entrar no menu "Eletrônicos"
     Verificar se aparece a frase "Eletrônicos e Tecnologia"
     Verificar se o titulo da pagina fica "Eletrônicos e Tecnologia | Amazon.com.br"
+    Verificar se aparece a categoria "Coputadores e Informatica"
     Verificar se aparece a categoria "tablets"
 
 
@@ -26,5 +27,5 @@ caso de teste 02 - Pesquisa de Produtos
     [Tags]              Busca_produtos     lista_busca
     Acessar a home page do site Amazon.com.br
     Digitar o nome do produto "Xbox Series S" no campo de Pesquisa
-#     Clicar no botão de pesquisa 
-#     O sistema deve exibir a tela com o resultado da pesquisa, listando o produto pesquisado
+    Clicar no botão de pesquisa 
+    # Verificar o resultado da pesquisa se está listando o produto "Console Xbox Series S"
