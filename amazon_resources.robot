@@ -39,6 +39,19 @@ Verificar se aparece a frase "${FRASE}"
 verificar se o titulo da pagina fica "${TITULO}"
     Title Should Be    title=${TITULO}
 
-
 verificar se aparece a categoria "${NOME_CATEGORIA}"
     Element Should Be Visible    locator=//a[@area-label='${NOME_CATEGORIA}']
+
+
+Digitar o nome do produto "${PRODUTO}" no campo de pesquisa
+    Input Text    locator=twotabsearchtexbox    text=${PRODUTO}
+
+
+Clicar no botão de pesquisa
+    Click Element    locator=nav-search-submit-button
+
+
+
+Verificar o resultado da pesquisa se está listando o "${PRODUTO}"
+    Wait Until Element Is Visible    locator=(//span[contains(.,'${PRODUTO}')])[3]    
+    
