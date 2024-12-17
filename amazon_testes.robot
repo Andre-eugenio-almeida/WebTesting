@@ -18,7 +18,7 @@ caso de teste 01 - Acesso ao menu "Eletrônicos"
     Entrar no menu "Eletrônicos"
     Verificar se aparece a frase "Eletrônicos e Tecnologia"
     Verificar se o titulo da pagina fica "Eletrônicos e Tecnologia | Amazon.com.br"
-    Verificar se aparece a categoria "Coputadores e Informatica"
+    Verificar se aparece a categoria "Coputadores e Informática"
     Verificar se aparece a categoria "tablets"
 
 

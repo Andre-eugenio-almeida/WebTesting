@@ -59,3 +59,20 @@ Verificar o resultado da pesquisa se está listando o "${PRODUTO}"
 #GHERSKIN STEPS
 
 Dado que estou na home page da Amazon.com.br
+    Acessar a home page do site Amazon.com.br
+    Verificar se o titulo da pagina fica " Amazon.com.br | Compre livros, Kindle, Echo, Fire Tv e mais."
+
+
+Quando acessar o menu "Eletrônicos"
+    Entrar no menu "Eletrônicos"
+
+
+Então o titulo da pagina deve ficar "Eletrônicos e Tecnologia" | Amazon.com.br
+    Verificar se o titulo da pagina fica "Eletrônicos e Tecnologia | Amazon.com.br"
+
+
+E o texto "Eletrônicos e Tecnologia" deve ser exibido na página
+    Verificar se aparece a frase "Eletrônicos e Tecnologia"
+
+E a categoria "Computadores e Informática" deve ser exibido na página
+    Verificar se aparece a categoria "Coputadores e Informatica"
