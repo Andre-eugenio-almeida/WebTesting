@@ -1,4 +1,5 @@
 
+
 *** Settings ***
 Documentation    Essa suite testa o site da amazon.com.br
 Resource           amazon_resources.robot
@@ -13,6 +14,7 @@ caso de teste 01 - Acesso ao menu "Eletrônicos"
     [Documentation]    Este teste verifica o menu de eletronicos do site da Amazon.com.br
     ...                e verificar a categoria Computadores e Informatica     
     [Tags]             menus   categorias
+    Acessar a home page do site Amazon.com.br 
     Dado que estou na home page da Amazon.com.br
     Quando acessar o menu "Eletrônicos"
     Então o titulo da pagina deve ficar "Eletrônicos e Tecnologia" | Amazon.com.br
@@ -21,7 +23,7 @@ caso de teste 01 - Acesso ao menu "Eletrônicos"
 
    
 
-caso de teste 02 - Pesquisa de Produtos 
+caso de teste 02 - Pesquisa de um Produto
     [Documentation]     Este teste verifica a busca de um produto 
     [Tags]              Busca_produtos     lista_busca
     Dado que estou na home page da Amazon.com.br
