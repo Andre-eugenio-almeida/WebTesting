@@ -1,122 +1,355 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1.1 (Python 3.13.0 on win32)" generated="2025-01-07T22:34:23.983619" rpa="false" schemaversion="5">
+<robot generator="Robot 7.1.1 (Python 3.13.0 on win32)" generated="2025-01-08T20:21:57.978713" rpa="false" schemaversion="5">
 <suite id="s1" name="Amazon Testes" source="C:\testeUdemy\robotFramework\WebTesting\amazon_testes.robot">
 <test id="s1-t1" name="caso de teste 01 - Acesso ao menu &quot;Eletrônicos&quot;" line="12">
 <kw name="Abrir o navegador" owner="amazon_resources" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-01-07T22:34:24.346464" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg time="2025-01-08T20:21:58.336189" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
 <arg>browser=${BROWSER}</arg>
 <arg>options=add_experimental_option("detach", True)</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-01-07T22:34:24.346029" elapsed="1.954846"/>
+<status status="PASS" start="2025-01-08T20:21:58.335755" elapsed="1.773756"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-01-07T22:34:26.301205" elapsed="0.049440"/>
+<status status="PASS" start="2025-01-08T20:22:00.110077" elapsed="0.044899"/>
 </kw>
-<status status="PASS" start="2025-01-07T22:34:24.344496" elapsed="2.006453"/>
+<status status="PASS" start="2025-01-08T20:21:58.334246" elapsed="1.821074"/>
 </kw>
 <kw name="Acessar a home page do site Amazon.com.br" owner="amazon_resources">
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-01-07T22:34:26.352981" level="INFO">Opening url 'http://www.amazon.com.br'</msg>
+<msg time="2025-01-08T20:22:00.160029" level="INFO">Opening url 'http://www.amazon.com.br'</msg>
 <arg>url=${URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-01-07T22:34:26.352553" elapsed="0.942564"/>
+<status status="PASS" start="2025-01-08T20:22:00.157852" elapsed="0.983553"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-07T22:34:52.298972" level="INFO">Slept 25 seconds.</msg>
-<msg time="2025-01-07T22:34:52.299529" level="INFO">${variable} = None</msg>
+<msg time="2025-01-08T20:22:26.144758" level="INFO">Slept 25 seconds.</msg>
+<msg time="2025-01-08T20:22:26.145324" level="INFO">${variable} = None</msg>
 <var>${variable}</var>
 <arg>25s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-07T22:34:27.296497" elapsed="25.003223"/>
+<status status="PASS" start="2025-01-08T20:22:01.142897" elapsed="25.002578"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<msg time="2025-01-07T22:34:57.597190" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-01-07T22:34:57.597496" level="FAIL">Element '//a[@href='/Eletronicos-e-Tecnologia/b/?ie=UTF8&amp;node=16209062011&amp;ref_=nav_cs_electronics'][contains(.,'Eletrônicos')]' not visible after 5 seconds.</msg>
+<msg time="2025-01-08T20:22:26.157189" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.264)
+Stacktrace:
+	GetHandleVerifier [0x00B833E3+25059]
+	(No symbol) [0x00B0CDE4]
+	(No symbol) [0x009EBEC3]
+	(No symbol) [0x009CD93B]
+	(No symbol) [0x00A5800F]
+	(No symbol) [0x00A6AE49]
+	(No symbol) [0x00A51C96]
+	(No symbol) [0x00A23FAC]
+	(No symbol) [0x00A24F3D]
+	GetHandleVerifier [0x00E75543+3113795]
+	GetHandleVerifier [0x00E8A20A+3198986]
+	GetHandleVerifier [0x00E829E2+3168226]
+	GetHandleVerifier [0x00C23250+680016]
+	(No symbol) [0x00B1572D]
+	(No symbol) [0x00B129D8]
+	(No symbol) [0x00B12B75]
+	(No symbol) [0x00B057D0]
+	BaseThreadInitThunk [0x75AAFCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x774C7CBE+286]
+	RtlGetAppContainerNamedObjectPath [0x774C7C8E+238]
+</msg>
+<msg time="2025-01-08T20:22:26.173673" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.264)
+Stacktrace:
+	GetHandleVerifier [0x00B833E3+25059]
+	(No symbol) [0x00B0CDE4]
+	(No symbol) [0x009EBEC3]
+	(No symbol) [0x009CD93B]
+	(No symbol) [0x00A5800F]
+	(No symbol) [0x00A6AE49]
+	(No symbol) [0x00A51C96]
+	(No symbol) [0x00A23FAC]
+	(No symbol) [0x00A24F3D]
+	GetHandleVerifier [0x00E75543+3113795]
+	GetHandleVerifier [0x00E8A20A+3198986]
+	GetHandleVerifier [0x00E829E2+3168226]
+	GetHandleVerifier [0x00C23250+680016]
+	(No symbol) [0x00B1572D]
+	(No symbol) [0x00B129D8]
+	(No symbol) [0x00B12B75]
+	(No symbol) [0x00B057D0]
+	BaseThreadInitThunk [0x75AAFCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x774C7CBE+286]
+	RtlGetAppContainerNamedObjectPath [0x774C7C8E+238]
+</msg>
 <arg>locator=${MENU_ELETRONICOS}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="FAIL" start="2025-01-07T22:34:52.300422" elapsed="5.299840">Element '//a[@href='/Eletronicos-e-Tecnologia/b/?ie=UTF8&amp;node=16209062011&amp;ref_=nav_cs_electronics'][contains(.,'Eletrônicos')]' not visible after 5 seconds.</status>
+<status status="FAIL" start="2025-01-08T20:22:26.146208" elapsed="0.052916">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.264)
+Stacktrace:
+	GetHandleVerifier [0x00B833E3+25059]
+	(No symbol) [0x00B0CDE4]
+	(No symbol) [0x009EBEC3]
+	(No symbol) [0x009CD93B]
+	(No symbol) [0x00A5800F]
+	(No symbol) [0x00A6AE49]
+	(No symbol) [0x00A51C96]
+	(No symbol) [0x00A23FAC]
+	(No symbol) [0x00A24F3D]
+	GetHandleVerifier [0x00E75543+3113795]
+	GetHandleVerifier [0x00E8A20A+3198986]
+	GetHandleVerifier [0x00E829E2+3168226]
+	GetHandleVerifier [0x00C23250+680016]
+	(No symbol) [0x00B1572D]
+	(No symbol) [0x00B129D8]
+	(No symbol) [0x00B12B75]
+	(No symbol) [0x00B057D0]
+	BaseThreadInitThunk [0x75AAFCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x774C7CBE+286]
+	RtlGetAppContainerNamedObjectPath [0x774C7C8E+238]
+</status>
 </kw>
-<status status="FAIL" start="2025-01-07T22:34:26.351812" elapsed="31.248701">Element '//a[@href='/Eletronicos-e-Tecnologia/b/?ie=UTF8&amp;node=16209062011&amp;ref_=nav_cs_electronics'][contains(.,'Eletrônicos')]' not visible after 5 seconds.</status>
+<status status="FAIL" start="2025-01-08T20:22:00.156659" elapsed="26.044770">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.264)
+Stacktrace:
+	GetHandleVerifier [0x00B833E3+25059]
+	(No symbol) [0x00B0CDE4]
+	(No symbol) [0x009EBEC3]
+	(No symbol) [0x009CD93B]
+	(No symbol) [0x00A5800F]
+	(No symbol) [0x00A6AE49]
+	(No symbol) [0x00A51C96]
+	(No symbol) [0x00A23FAC]
+	(No symbol) [0x00A24F3D]
+	GetHandleVerifier [0x00E75543+3113795]
+	GetHandleVerifier [0x00E8A20A+3198986]
+	GetHandleVerifier [0x00E829E2+3168226]
+	GetHandleVerifier [0x00C23250+680016]
+	(No symbol) [0x00B1572D]
+	(No symbol) [0x00B129D8]
+	(No symbol) [0x00B12B75]
+	(No symbol) [0x00B057D0]
+	BaseThreadInitThunk [0x75AAFCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x774C7CBE+286]
+	RtlGetAppContainerNamedObjectPath [0x774C7C8E+238]
+</status>
 </kw>
 <kw name="Verificar se o titulo da pagina fica &quot; Amazon.com.br | Compre livros, Kindle, Echo, Fire Tv e mais.&quot;" owner="amazon_resources" source_name="verificar se o titulo da pagina fica &quot;${TITULO}&quot;">
-<status status="NOT RUN" start="2025-01-07T22:34:57.601425" elapsed="0.000136"/>
+<status status="NOT RUN" start="2025-01-08T20:22:26.203956" elapsed="0.000229"/>
 </kw>
 <kw name="Entrar no menu &quot;Eletrônicos&quot;" owner="amazon_resources">
-<status status="NOT RUN" start="2025-01-07T22:34:57.602085" elapsed="0.000077"/>
+<status status="NOT RUN" start="2025-01-08T20:22:26.205258" elapsed="0.000198"/>
 </kw>
 <kw name="Verificar se aparece a frase &quot;Eletrônicos e Tecnologia&quot;" owner="amazon_resources" source_name="Verificar se aparece a frase &quot;${FRASE}&quot;">
-<status status="NOT RUN" start="2025-01-07T22:34:57.602715" elapsed="0.000079"/>
+<status status="NOT RUN" start="2025-01-08T20:22:26.206533" elapsed="0.000260"/>
 </kw>
 <kw name="Verificar se aparece a categoria &quot;Coputadores e Informática&quot;" owner="amazon_resources" source_name="verificar se aparece a categoria &quot;${NOME_CATEGORIA}&quot;">
-<status status="NOT RUN" start="2025-01-07T22:34:57.603216" elapsed="0.000066"/>
+<status status="NOT RUN" start="2025-01-08T20:22:26.207839" elapsed="0.000189"/>
 </kw>
 <doc>Este teste verifica o menu de eletronicos do site da Amazon.com.br
 e verificar a categoria Computadores e Informatica</doc>
 <tag>categorias</tag>
 <tag>menus</tag>
-<status status="FAIL" start="2025-01-07T22:34:24.342667" elapsed="33.261029">Element '//a[@href='/Eletronicos-e-Tecnologia/b/?ie=UTF8&amp;node=16209062011&amp;ref_=nav_cs_electronics'][contains(.,'Eletrônicos')]' not visible after 5 seconds.</status>
+<status status="FAIL" start="2025-01-08T20:21:58.332394" elapsed="27.876784">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.264)
+Stacktrace:
+	GetHandleVerifier [0x00B833E3+25059]
+	(No symbol) [0x00B0CDE4]
+	(No symbol) [0x009EBEC3]
+	(No symbol) [0x009CD93B]
+	(No symbol) [0x00A5800F]
+	(No symbol) [0x00A6AE49]
+	(No symbol) [0x00A51C96]
+	(No symbol) [0x00A23FAC]
+	(No symbol) [0x00A24F3D]
+	GetHandleVerifier [0x00E75543+3113795]
+	GetHandleVerifier [0x00E8A20A+3198986]
+	GetHandleVerifier [0x00E829E2+3168226]
+	GetHandleVerifier [0x00C23250+680016]
+	(No symbol) [0x00B1572D]
+	(No symbol) [0x00B129D8]
+	(No symbol) [0x00B12B75]
+	(No symbol) [0x00B057D0]
+	BaseThreadInitThunk [0x75AAFCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x774C7CBE+286]
+	RtlGetAppContainerNamedObjectPath [0x774C7C8E+238]
+</status>
 </test>
 <test id="s1-t2" name="caso de teste 02 - Pesquisa de Produtos" line="24">
 <kw name="Abrir o navegador" owner="amazon_resources" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-01-07T22:34:57.607078" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg time="2025-01-08T20:22:26.234884" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
 <arg>browser=${BROWSER}</arg>
 <arg>options=add_experimental_option("detach", True)</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-01-07T22:34:57.606746" elapsed="1.768704"/>
+<status status="PASS" start="2025-01-08T20:22:26.233870" elapsed="1.957468"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-01-07T22:34:59.375728" elapsed="0.052215"/>
+<status status="PASS" start="2025-01-08T20:22:28.191586" elapsed="0.044564"/>
 </kw>
-<status status="PASS" start="2025-01-07T22:34:57.606337" elapsed="1.821918"/>
+<status status="PASS" start="2025-01-08T20:22:26.230897" elapsed="2.005426"/>
 </kw>
 <kw name="Acessar a home page do site Amazon.com.br" owner="amazon_resources">
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-01-07T22:34:59.430796" level="INFO">Opening url 'http://www.amazon.com.br'</msg>
+<msg time="2025-01-08T20:22:28.237644" level="INFO">Opening url 'http://www.amazon.com.br'</msg>
 <arg>url=${URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-01-07T22:34:59.430343" elapsed="1.199389"/>
+<status status="PASS" start="2025-01-08T20:22:28.237376" elapsed="1.085745"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-01-07T22:35:25.630833" level="INFO">Slept 25 seconds.</msg>
-<msg time="2025-01-07T22:35:25.631129" level="INFO">${variable} = None</msg>
+<msg time="2025-01-08T20:22:54.324155" level="INFO">Slept 25 seconds.</msg>
+<msg time="2025-01-08T20:22:54.324711" level="INFO">${variable} = None</msg>
 <var>${variable}</var>
 <arg>25s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-01-07T22:35:00.630191" elapsed="25.001014"/>
+<status status="PASS" start="2025-01-08T20:22:29.323422" elapsed="25.001439"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2025-01-08T20:22:54.335379" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.264)
+Stacktrace:
+	GetHandleVerifier [0x00B833E3+25059]
+	(No symbol) [0x00B0CDE4]
+	(No symbol) [0x009EBEC3]
+	(No symbol) [0x009CD93B]
+	(No symbol) [0x00A5800F]
+	(No symbol) [0x00A6AE49]
+	(No symbol) [0x00A51C96]
+	(No symbol) [0x00A23FAC]
+	(No symbol) [0x00A24F3D]
+	GetHandleVerifier [0x00E75543+3113795]
+	GetHandleVerifier [0x00E8A20A+3198986]
+	GetHandleVerifier [0x00E829E2+3168226]
+	GetHandleVerifier [0x00C23250+680016]
+	(No symbol) [0x00B1572D]
+	(No symbol) [0x00B129D8]
+	(No symbol) [0x00B12B75]
+	(No symbol) [0x00B057D0]
+	BaseThreadInitThunk [0x75AAFCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x774C7CBE+286]
+	RtlGetAppContainerNamedObjectPath [0x774C7C8E+238]
+</msg>
+<msg time="2025-01-08T20:22:54.351194" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.264)
+Stacktrace:
+	GetHandleVerifier [0x00B833E3+25059]
+	(No symbol) [0x00B0CDE4]
+	(No symbol) [0x009EBEC3]
+	(No symbol) [0x009CD93B]
+	(No symbol) [0x00A5800F]
+	(No symbol) [0x00A6AE49]
+	(No symbol) [0x00A51C96]
+	(No symbol) [0x00A23FAC]
+	(No symbol) [0x00A24F3D]
+	GetHandleVerifier [0x00E75543+3113795]
+	GetHandleVerifier [0x00E8A20A+3198986]
+	GetHandleVerifier [0x00E829E2+3168226]
+	GetHandleVerifier [0x00C23250+680016]
+	(No symbol) [0x00B1572D]
+	(No symbol) [0x00B129D8]
+	(No symbol) [0x00B12B75]
+	(No symbol) [0x00B057D0]
+	BaseThreadInitThunk [0x75AAFCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x774C7CBE+286]
+	RtlGetAppContainerNamedObjectPath [0x774C7C8E+238]
+</msg>
 <arg>locator=${MENU_ELETRONICOS}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-01-07T22:35:25.631560" elapsed="0.072060"/>
+<status status="FAIL" start="2025-01-08T20:22:54.325587" elapsed="0.045958">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.264)
+Stacktrace:
+	GetHandleVerifier [0x00B833E3+25059]
+	(No symbol) [0x00B0CDE4]
+	(No symbol) [0x009EBEC3]
+	(No symbol) [0x009CD93B]
+	(No symbol) [0x00A5800F]
+	(No symbol) [0x00A6AE49]
+	(No symbol) [0x00A51C96]
+	(No symbol) [0x00A23FAC]
+	(No symbol) [0x00A24F3D]
+	GetHandleVerifier [0x00E75543+3113795]
+	GetHandleVerifier [0x00E8A20A+3198986]
+	GetHandleVerifier [0x00E829E2+3168226]
+	GetHandleVerifier [0x00C23250+680016]
+	(No symbol) [0x00B1572D]
+	(No symbol) [0x00B129D8]
+	(No symbol) [0x00B12B75]
+	(No symbol) [0x00B057D0]
+	BaseThreadInitThunk [0x75AAFCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x774C7CBE+286]
+	RtlGetAppContainerNamedObjectPath [0x774C7C8E+238]
+</status>
 </kw>
-<status status="PASS" start="2025-01-07T22:34:59.429549" elapsed="26.274248"/>
+<status status="FAIL" start="2025-01-08T20:22:28.236927" elapsed="26.136255">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.264)
+Stacktrace:
+	GetHandleVerifier [0x00B833E3+25059]
+	(No symbol) [0x00B0CDE4]
+	(No symbol) [0x009EBEC3]
+	(No symbol) [0x009CD93B]
+	(No symbol) [0x00A5800F]
+	(No symbol) [0x00A6AE49]
+	(No symbol) [0x00A51C96]
+	(No symbol) [0x00A23FAC]
+	(No symbol) [0x00A24F3D]
+	GetHandleVerifier [0x00E75543+3113795]
+	GetHandleVerifier [0x00E8A20A+3198986]
+	GetHandleVerifier [0x00E829E2+3168226]
+	GetHandleVerifier [0x00C23250+680016]
+	(No symbol) [0x00B1572D]
+	(No symbol) [0x00B129D8]
+	(No symbol) [0x00B12B75]
+	(No symbol) [0x00B057D0]
+	BaseThreadInitThunk [0x75AAFCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x774C7CBE+286]
+	RtlGetAppContainerNamedObjectPath [0x774C7C8E+238]
+</status>
 </kw>
 <kw name="Digitar o nome do produto &quot;Xbox Series S&quot; no campo de Pesquisa" owner="amazon_resources" source_name="Digitar o nome do produto &quot;${PRODUTO}&quot; no campo de pesquisa">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-01-07T22:35:25.705312" level="INFO">Typing text 'Xbox Series S' into text field 'twotabsearchtexbox'.</msg>
-<msg time="2025-01-07T22:35:25.945738" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-01-07T22:35:25.946237" level="FAIL">Element with locator 'twotabsearchtexbox' not found.</msg>
-<arg>locator=twotabsearchtexbox</arg>
-<arg>text=${PRODUTO}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="FAIL" start="2025-01-07T22:35:25.704945" elapsed="0.246306">Element with locator 'twotabsearchtexbox' not found.</status>
-</kw>
-<status status="FAIL" start="2025-01-07T22:35:25.704408" elapsed="0.247251">Element with locator 'twotabsearchtexbox' not found.</status>
+<status status="NOT RUN" start="2025-01-08T20:22:54.375500" elapsed="0.001102"/>
 </kw>
 <kw name="Clicar no botão de pesquisa" owner="amazon_resources">
-<status status="NOT RUN" start="2025-01-07T22:35:25.952323" elapsed="0.000105"/>
+<status status="NOT RUN" start="2025-01-08T20:22:54.378766" elapsed="0.000217"/>
 </kw>
 <doc>Este teste verifica a busca de um produto</doc>
 <tag>Busca_produtos</tag>
 <tag>lista_busca</tag>
-<status status="FAIL" start="2025-01-07T22:34:57.605456" elapsed="28.347548">Element with locator 'twotabsearchtexbox' not found.</status>
+<status status="FAIL" start="2025-01-08T20:22:26.227209" elapsed="28.152960">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.264)
+Stacktrace:
+	GetHandleVerifier [0x00B833E3+25059]
+	(No symbol) [0x00B0CDE4]
+	(No symbol) [0x009EBEC3]
+	(No symbol) [0x009CD93B]
+	(No symbol) [0x00A5800F]
+	(No symbol) [0x00A6AE49]
+	(No symbol) [0x00A51C96]
+	(No symbol) [0x00A23FAC]
+	(No symbol) [0x00A24F3D]
+	GetHandleVerifier [0x00E75543+3113795]
+	GetHandleVerifier [0x00E8A20A+3198986]
+	GetHandleVerifier [0x00E829E2+3168226]
+	GetHandleVerifier [0x00C23250+680016]
+	(No symbol) [0x00B1572D]
+	(No symbol) [0x00B129D8]
+	(No symbol) [0x00B12B75]
+	(No symbol) [0x00B057D0]
+	BaseThreadInitThunk [0x75AAFCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x774C7CBE+286]
+	RtlGetAppContainerNamedObjectPath [0x774C7C8E+238]
+</status>
 </test>
 <doc>Essa suite testa o site da amazon.com.br</doc>
-<status status="FAIL" start="2025-01-07T22:34:23.985558" elapsed="61.970961"/>
+<status status="FAIL" start="2025-01-08T20:21:57.980826" elapsed="56.413643"/>
 </suite>
 <statistics>
 <total>
@@ -133,5 +366,55 @@ e verificar a categoria Computadores e Informatica</doc>
 </suite>
 </statistics>
 <errors>
+<msg time="2025-01-08T20:22:26.157189" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.264)
+Stacktrace:
+	GetHandleVerifier [0x00B833E3+25059]
+	(No symbol) [0x00B0CDE4]
+	(No symbol) [0x009EBEC3]
+	(No symbol) [0x009CD93B]
+	(No symbol) [0x00A5800F]
+	(No symbol) [0x00A6AE49]
+	(No symbol) [0x00A51C96]
+	(No symbol) [0x00A23FAC]
+	(No symbol) [0x00A24F3D]
+	GetHandleVerifier [0x00E75543+3113795]
+	GetHandleVerifier [0x00E8A20A+3198986]
+	GetHandleVerifier [0x00E829E2+3168226]
+	GetHandleVerifier [0x00C23250+680016]
+	(No symbol) [0x00B1572D]
+	(No symbol) [0x00B129D8]
+	(No symbol) [0x00B12B75]
+	(No symbol) [0x00B057D0]
+	BaseThreadInitThunk [0x75AAFCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x774C7CBE+286]
+	RtlGetAppContainerNamedObjectPath [0x774C7C8E+238]
+</msg>
+<msg time="2025-01-08T20:22:54.335379" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.264)
+Stacktrace:
+	GetHandleVerifier [0x00B833E3+25059]
+	(No symbol) [0x00B0CDE4]
+	(No symbol) [0x009EBEC3]
+	(No symbol) [0x009CD93B]
+	(No symbol) [0x00A5800F]
+	(No symbol) [0x00A6AE49]
+	(No symbol) [0x00A51C96]
+	(No symbol) [0x00A23FAC]
+	(No symbol) [0x00A24F3D]
+	GetHandleVerifier [0x00E75543+3113795]
+	GetHandleVerifier [0x00E8A20A+3198986]
+	GetHandleVerifier [0x00E829E2+3168226]
+	GetHandleVerifier [0x00C23250+680016]
+	(No symbol) [0x00B1572D]
+	(No symbol) [0x00B129D8]
+	(No symbol) [0x00B12B75]
+	(No symbol) [0x00B057D0]
+	BaseThreadInitThunk [0x75AAFCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x774C7CBE+286]
+	RtlGetAppContainerNamedObjectPath [0x774C7C8E+238]
+</msg>
 </errors>
 </robot>
