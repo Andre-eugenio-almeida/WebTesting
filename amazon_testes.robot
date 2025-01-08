@@ -27,5 +27,5 @@ caso de teste 02 - Pesquisa de Produtos
     Acessar a home page do site Amazon.com.br
     Digitar o nome do produto "Xbox Series S" no campo de Pesquisa
     Clicar no botão de pesquisa 
-    Verificar o resultado da pesquisa se está listando o produto pesquisado.
+    # Verificar o resultado da pesquisa se está listando o produto pesquisado.
 

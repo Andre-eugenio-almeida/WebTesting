@@ -23,7 +23,8 @@ Fechar o navegador
     Close Browser
 
 Acessar a home page do site Amazon.com.br
-    Go To    url=${URL}
+    Go To     url=${URL}
+    ${variable}=    Sleep  25s
     Wait Until Element Is Visible    locator=${MENU_ELETRONICOS}
    
 

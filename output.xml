@@ -1,102 +1,122 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1.1 (Python 3.13.0 on win32)" generated="2025-01-07T22:17:36.156115" rpa="false" schemaversion="5">
+<robot generator="Robot 7.1.1 (Python 3.13.0 on win32)" generated="2025-01-07T22:27:11.059298" rpa="false" schemaversion="5">
 <suite id="s1" name="Amazon Testes" source="C:\testeUdemy\robotFramework\WebTesting\amazon_testes.robot">
 <test id="s1-t1" name="caso de teste 01 - Acesso ao menu &quot;Eletrônicos&quot;" line="12">
 <kw name="Abrir o navegador" owner="amazon_resources" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-01-07T22:17:36.550605" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg time="2025-01-07T22:27:11.416150" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
 <arg>browser=${BROWSER}</arg>
 <arg>options=add_experimental_option("detach", True)</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-01-07T22:17:36.550238" elapsed="1.855413"/>
+<status status="PASS" start="2025-01-07T22:27:11.415782" elapsed="2.112085"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-01-07T22:17:38.406159" elapsed="0.055859"/>
+<status status="PASS" start="2025-01-07T22:27:13.528171" elapsed="0.045597"/>
 </kw>
-<status status="PASS" start="2025-01-07T22:17:36.548914" elapsed="1.913332"/>
+<status status="PASS" start="2025-01-07T22:27:11.414450" elapsed="2.159542"/>
 </kw>
 <kw name="Acessar a home page do site Amazon.com.br" owner="amazon_resources">
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-01-07T22:17:38.464245" level="INFO">Opening url 'http://www.amazon.com.br'</msg>
+<msg time="2025-01-07T22:27:13.575587" level="INFO">Opening url 'http://www.amazon.com.br'</msg>
 <arg>url=${URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-01-07T22:17:38.463936" elapsed="1.050825"/>
+<status status="PASS" start="2025-01-07T22:27:13.575328" elapsed="1.033433"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-07T22:27:39.609963" level="INFO">Slept 25 seconds.</msg>
+<msg time="2025-01-07T22:27:39.610525" level="INFO">${variable} = None</msg>
+<var>${variable}</var>
+<arg>25s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-07T22:27:14.609139" elapsed="25.001534"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<msg time="2025-01-07T22:17:44.822143" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-15.png"&gt;&lt;img src="selenium-screenshot-15.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-01-07T22:17:44.822402" level="FAIL">Element '//a[@href='/Eletronicos-e-Tecnologia/b/?ie=UTF8&amp;node=16209062011&amp;ref_=nav_cs_electronics'][contains(.,'Eletrônicos')]' not visible after 5 seconds.</msg>
+<msg time="2025-01-07T22:27:44.957931" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-25.png"&gt;&lt;img src="selenium-screenshot-25.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-01-07T22:27:44.958233" level="FAIL">Element '//a[@href='/Eletronicos-e-Tecnologia/b/?ie=UTF8&amp;node=16209062011&amp;ref_=nav_cs_electronics'][contains(.,'Eletrônicos')]' not visible after 5 seconds.</msg>
 <arg>locator=${MENU_ELETRONICOS}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="FAIL" start="2025-01-07T22:17:39.516198" elapsed="5.308893">Element '//a[@href='/Eletronicos-e-Tecnologia/b/?ie=UTF8&amp;node=16209062011&amp;ref_=nav_cs_electronics'][contains(.,'Eletrônicos')]' not visible after 5 seconds.</status>
+<status status="FAIL" start="2025-01-07T22:27:39.611388" elapsed="5.350208">Element '//a[@href='/Eletronicos-e-Tecnologia/b/?ie=UTF8&amp;node=16209062011&amp;ref_=nav_cs_electronics'][contains(.,'Eletrônicos')]' not visible after 5 seconds.</status>
 </kw>
-<status status="FAIL" start="2025-01-07T22:17:38.463205" elapsed="6.362157">Element '//a[@href='/Eletronicos-e-Tecnologia/b/?ie=UTF8&amp;node=16209062011&amp;ref_=nav_cs_electronics'][contains(.,'Eletrônicos')]' not visible after 5 seconds.</status>
+<status status="FAIL" start="2025-01-07T22:27:13.574844" elapsed="31.387040">Element '//a[@href='/Eletronicos-e-Tecnologia/b/?ie=UTF8&amp;node=16209062011&amp;ref_=nav_cs_electronics'][contains(.,'Eletrônicos')]' not visible after 5 seconds.</status>
 </kw>
 <kw name="Verificar se o titulo da pagina fica &quot; Amazon.com.br | Compre livros, Kindle, Echo, Fire Tv e mais.&quot;" owner="amazon_resources" source_name="verificar se o titulo da pagina fica &quot;${TITULO}&quot;">
-<status status="NOT RUN" start="2025-01-07T22:17:44.826072" elapsed="0.000080"/>
+<status status="NOT RUN" start="2025-01-07T22:27:44.962642" elapsed="0.000080"/>
 </kw>
 <kw name="Entrar no menu &quot;Eletrônicos&quot;" owner="amazon_resources">
-<status status="NOT RUN" start="2025-01-07T22:17:44.826552" elapsed="0.000061"/>
+<status status="NOT RUN" start="2025-01-07T22:27:44.963124" elapsed="0.000063"/>
 </kw>
 <kw name="Verificar se aparece a frase &quot;Eletrônicos e Tecnologia&quot;" owner="amazon_resources" source_name="Verificar se aparece a frase &quot;${FRASE}&quot;">
-<status status="NOT RUN" start="2025-01-07T22:17:44.827005" elapsed="0.000067"/>
+<status status="NOT RUN" start="2025-01-07T22:27:44.963596" elapsed="0.000065"/>
 </kw>
 <kw name="Verificar se aparece a categoria &quot;Coputadores e Informática&quot;" owner="amazon_resources" source_name="verificar se aparece a categoria &quot;${NOME_CATEGORIA}&quot;">
-<status status="NOT RUN" start="2025-01-07T22:17:44.827445" elapsed="0.000058"/>
+<status status="NOT RUN" start="2025-01-07T22:27:44.964055" elapsed="0.000066"/>
 </kw>
 <doc>Este teste verifica o menu de eletronicos do site da Amazon.com.br
 e verificar a categoria Computadores e Informatica</doc>
 <tag>categorias</tag>
 <tag>menus</tag>
-<status status="FAIL" start="2025-01-07T22:17:36.547263" elapsed="8.280611">Element '//a[@href='/Eletronicos-e-Tecnologia/b/?ie=UTF8&amp;node=16209062011&amp;ref_=nav_cs_electronics'][contains(.,'Eletrônicos')]' not visible after 5 seconds.</status>
+<status status="FAIL" start="2025-01-07T22:27:11.412779" elapsed="33.551769">Element '//a[@href='/Eletronicos-e-Tecnologia/b/?ie=UTF8&amp;node=16209062011&amp;ref_=nav_cs_electronics'][contains(.,'Eletrônicos')]' not visible after 5 seconds.</status>
 </test>
 <test id="s1-t2" name="caso de teste 02 - Pesquisa de Produtos" line="24">
 <kw name="Abrir o navegador" owner="amazon_resources" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-01-07T22:17:44.831165" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg time="2025-01-07T22:27:44.969580" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
 <arg>browser=${BROWSER}</arg>
 <arg>options=add_experimental_option("detach", True)</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-01-07T22:17:44.830862" elapsed="1.838678"/>
+<status status="PASS" start="2025-01-07T22:27:44.969156" elapsed="1.773465"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-01-07T22:17:46.669821" elapsed="0.038422"/>
+<status status="PASS" start="2025-01-07T22:27:46.743009" elapsed="0.034014"/>
 </kw>
-<status status="PASS" start="2025-01-07T22:17:44.830462" elapsed="1.877962"/>
+<status status="PASS" start="2025-01-07T22:27:44.968692" elapsed="1.809120"/>
 </kw>
 <kw name="Acessar a home page do site Amazon.com.br" owner="amazon_resources">
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-01-07T22:17:46.710383" level="INFO">Opening url 'http://www.amazon.com.br'</msg>
+<msg time="2025-01-07T22:27:46.780444" level="INFO">Opening url 'http://www.amazon.com.br'</msg>
 <arg>url=${URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-01-07T22:17:46.709863" elapsed="1.397574"/>
+<status status="PASS" start="2025-01-07T22:27:46.779855" elapsed="1.193798"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-01-07T22:28:12.975552" level="INFO">Slept 25 seconds.</msg>
+<msg time="2025-01-07T22:28:12.976536" level="INFO">${variable} = None</msg>
+<var>${variable}</var>
+<arg>25s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-01-07T22:27:47.973968" elapsed="25.002864"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<msg time="2025-01-07T22:17:53.315958" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-16.png"&gt;&lt;img src="selenium-screenshot-16.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-01-07T22:17:53.316221" level="FAIL">Element '//a[@href='/Eletronicos-e-Tecnologia/b/?ie=UTF8&amp;node=16209062011&amp;ref_=nav_cs_electronics'][contains(.,'Eletrônicos')]' not visible after 5 seconds.</msg>
 <arg>locator=${MENU_ELETRONICOS}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="FAIL" start="2025-01-07T22:17:48.107777" elapsed="5.210156">Element '//a[@href='/Eletronicos-e-Tecnologia/b/?ie=UTF8&amp;node=16209062011&amp;ref_=nav_cs_electronics'][contains(.,'Eletrônicos')]' not visible after 5 seconds.</status>
+<status status="PASS" start="2025-01-07T22:28:12.977660" elapsed="0.069909"/>
 </kw>
-<status status="FAIL" start="2025-01-07T22:17:46.709249" elapsed="6.608911">Element '//a[@href='/Eletronicos-e-Tecnologia/b/?ie=UTF8&amp;node=16209062011&amp;ref_=nav_cs_electronics'][contains(.,'Eletrônicos')]' not visible after 5 seconds.</status>
+<status status="PASS" start="2025-01-07T22:27:46.779029" elapsed="26.268834"/>
 </kw>
 <kw name="Digitar o nome do produto &quot;Xbox Series S&quot; no campo de Pesquisa" owner="amazon_resources" source_name="Digitar o nome do produto &quot;${PRODUTO}&quot; no campo de pesquisa">
-<status status="NOT RUN" start="2025-01-07T22:17:53.318731" elapsed="0.000106"/>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-07T22:28:13.050162" level="INFO">Typing text 'Xbox Series S' into text field 'twotabsearchtexbox'.</msg>
+<msg time="2025-01-07T22:28:13.277665" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-26.png"&gt;&lt;img src="selenium-screenshot-26.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-01-07T22:28:13.277900" level="FAIL">Element with locator 'twotabsearchtexbox' not found.</msg>
+<arg>locator=twotabsearchtexbox</arg>
+<arg>text=${PRODUTO}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2025-01-07T22:28:13.049536" elapsed="0.232068">Element with locator 'twotabsearchtexbox' not found.</status>
+</kw>
+<status status="FAIL" start="2025-01-07T22:28:13.048691" elapsed="0.233278">Element with locator 'twotabsearchtexbox' not found.</status>
 </kw>
 <kw name="Clicar no botão de pesquisa" owner="amazon_resources">
-<status status="NOT RUN" start="2025-01-07T22:17:53.319232" elapsed="0.000058"/>
-</kw>
-<kw name="Verificar o resultado da pesquisa se está listando o produto pesquisado.">
-<status status="NOT RUN" start="2025-01-07T22:17:53.319753" elapsed="0.000058"/>
+<status status="NOT RUN" start="2025-01-07T22:28:13.282651" elapsed="0.000118"/>
 </kw>
 <doc>Este teste verifica a busca de um produto</doc>
 <tag>Busca_produtos</tag>
 <tag>lista_busca</tag>
-<status status="FAIL" start="2025-01-07T22:17:44.829616" elapsed="8.490594">Element '//a[@href='/Eletronicos-e-Tecnologia/b/?ie=UTF8&amp;node=16209062011&amp;ref_=nav_cs_electronics'][contains(.,'Eletrônicos')]' not visible after 5 seconds.</status>
+<status status="FAIL" start="2025-01-07T22:27:44.967496" elapsed="28.315807">Element with locator 'twotabsearchtexbox' not found.</status>
 </test>
 <doc>Essa suite testa o site da amazon.com.br</doc>
-<status status="FAIL" start="2025-01-07T22:17:36.158191" elapsed="17.163976"/>
+<status status="FAIL" start="2025-01-07T22:27:11.061380" elapsed="62.223733"/>
 </suite>
 <statistics>
 <total>
